@@ -20,6 +20,8 @@ Route::get('posts/{post}', [PostsController::class, 'show'])->name('posts.show')
 
 Route::get('category/{category}', [PostsController::class, 'category'])->name('posts.category');
 
+Route::get('tag/{tag}', [PostsController::class, 'tag'])->name('posts.tag');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

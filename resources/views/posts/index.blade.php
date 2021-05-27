@@ -12,7 +12,7 @@
                         {{-- TAGS --}}
                         <div class="mb-2">
                             @foreach ($post->tags as $tag)
-                                <a class="inline-block bg-{{ $tag->color }}-400 text-white rounded-lg px-2" href=""> {{ '#' . $tag->name }}</a>
+                                <a class="inline-block bg-{{ $tag->color }}-400 text-white rounded-lg px-2" href="{{ route('posts.tag', $tag) }}"> {{ '#' . $tag->name }}</a>
                             @endforeach
                         </div>
 
