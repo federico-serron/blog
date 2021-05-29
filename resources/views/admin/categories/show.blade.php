@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard | FedeBlog')
+@section('title', 'Details | FedeBlog')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Category details</h1>
 @stop
 
 @section('content')
